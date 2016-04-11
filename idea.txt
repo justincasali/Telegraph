@@ -1,0 +1,16 @@
+Bluetooth morse code telegraph
+
+Physical buttons to select recipient (3 people)
+Lights to show sender (3 people)
+Type in morse code message and send it through text
+Receive text message and play it though audio (speaker / headphone jack)
+
+Configure message partners in application to buttons (1 / 2 / 3)
+
+button for (send / cancel) & (repeat message / stop)
+
+LED display to display message written / message received (buffers)
+
+Connect to twitter to send tweets? (one way communication)
+
+bluetooth telegraphs (end to end)

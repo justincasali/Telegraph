@@ -14,5 +14,3 @@ LED display to display message written / message received (buffers)
 Connect to twitter to send tweets? (one way communication)
 
 bluetooth telegraphs (end to end)
-
-Editing this file for a GitHub test

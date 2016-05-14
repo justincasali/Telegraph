@@ -10,7 +10,7 @@ Main: Main.o Morse.o
 Main.o: Main.cc
 	$(CC) $(CFLAGS) $<
 
-Morse.o: Morse.cc
+Morse.o: ../Library/Morse.cc
 	$(CC) $(CFLAGS) $<
 
 clean:

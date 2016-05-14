@@ -1,6 +1,6 @@
 
 #include <cstdio>
-#include "Morse.h"
+#include "../Library/Morse.h"
 
 Morse * code; // pointer to Morse class object
 
@@ -10,6 +10,8 @@ int main() {
 
     char input[0x10];
     char * position;
+
+    printf("Enter morse code below, using spaces to separate letters.\nTo convert press enter, to exit use CTRL-C.\n");
 
     while (1) {
         code->clear();

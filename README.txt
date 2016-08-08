@@ -1,3 +1,5 @@
+Created by Justin Casali
+
 A C++ Morse code library for handling and converting morse code data into ascii text.
 Library uses bitwise operators & a morse code lookup table to run efficiently on micro controllers.
 

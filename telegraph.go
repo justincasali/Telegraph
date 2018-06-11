@@ -21,6 +21,7 @@ var morseTable = [...]rune{
 func (m *Morse) clear() {
     *m = 0
 }
+
 func (m *Morse) dot() {
     if ((*m >> 5) >= 5) {
         return
@@ -28,6 +29,7 @@ func (m *Morse) dot() {
     *m |= 0 << (*m >> 5)
     *m += 1 << 5
 }
+
 func (m *Morse) dash() {
     if ((*m >> 5) >= 5) {
         return
@@ -35,19 +37,22 @@ func (m *Morse) dash() {
     *m |= 1 << (*m >> 5)
     *m += 1 << 5
 }
+
 func (m *Morse) convert() rune {
     return morseTable[*m]
 }
+
 func (m *Morse) code() int {
     return int(*m & 0x1f)
 }
+
 func (m *Morse) length() int {
     return int(*m >> 5)
 }
+
 func (m *Morse) print() {
     fmt.Printf("%c", m.convert())
 }
-
 
 func main () {
 
@@ -55,11 +60,8 @@ func main () {
     var m Morse = 0
 
     // H
-    m.clear()
-    m.dot()
-    m.dot()
-    m.dot()
-    m.dot()
+    m.clear();
+    m.dot(); m.dot(); m.dot(); m.dot()
     m.print()
 
     // E
@@ -69,25 +71,17 @@ func main () {
 
     // L
     m.clear()
-    m.dot()
-    m.dash()
-    m.dot()
-    m.dot()
+    m.dot(); m.dash(); m.dot(); m.dot()
     m.print()
 
     // L
     m.clear()
-    m.dot()
-    m.dash()
-    m.dot()
-    m.dot()
+    m.dot(); m.dash(); m.dot(); m.dot()
     m.print()
 
     // O
     m.clear()
-    m.dash()
-    m.dash()
-    m.dash()
+    m.dash(); m.dash(); m.dash()
     m.print()
 
     // New Line
